@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/imageViewRecord"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/cardview_dark_background"
+        android:src="@drawable/ic_add_a_photo_black_24dp"
+        />
+
+
+    <EditText
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtStt"
+        android:hint="stt"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtMasach"
+        android:hint="Mã sách"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtTensach"
+        android:hint="Tên sách"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        />
+
+    <EditText
+        android:inputType="number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtSotien"
+        android:hint="Số tiền"
+        android:ems="10"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnUpdate"
+        android:layout_centerHorizontal="true"
+        android:minWidth="160dp"
+        android:text="Sửa"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        />
+
+</LinearLayout>

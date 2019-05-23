@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TheloaiActivity">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:paddingBottom="20dp"
+            android:src="@mipmap/images" />
+
+        <ImageView
+
+            android:id="@+id/imageView"
+            android:layout_width="85dp"
+            android:layout_height="44dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:background="@color/cardview_dark_background"
+            android:src="@drawable/ic_add_a_photo_black_24dp" />
+
+        <Spinner
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spn"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+
+            />
+
+        <EditText
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtStt"
+            android:layout_below="@+id/spn"
+            android:hint="stt"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtMasach"
+            android:layout_below="@+id/edtStt"
+            android:hint="Mã sách"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtTensach"
+            android:layout_below="@+id/edtMasach"
+            android:hint="Tên sách"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            />
+
+        <EditText
+            android:inputType="number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtSotien"
+            android:layout_below="@+id/edtTensach"
+            android:hint="Số tiền"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAdd"
+            android:layout_below="@id/edtSotien"
+            android:layout_centerHorizontal="true"
+            android:minWidth="160dp"
+            android:text="Lưu"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnList"
+            android:layout_below="@id/btnAdd"
+            android:layout_centerHorizontal="true"
+            android:minWidth="160dp"
+            android:text="Danh sách"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
